@@ -56,7 +56,7 @@ app.post('/video', async (req, res) => {
 
     console.log(tituloVideo);
 
-    res.json({ downloadUrl: `http://${process.env.SERVER}/download/${tituloVideo}.mp4` });
+    res.json({ downloadUrl: `${process.env.SERVER}/download/${tituloVideo}.mp4` });
 
 })
 
